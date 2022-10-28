@@ -1,0 +1,146 @@
+\documentclass[12pt, letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{mathrsfs}
+\usepackage{xcolor}
+\usepackage{dsfont}
+\usepackage{amsfonts}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy} 
+\lhead{González de la Fuente Alexandra}
+
+
+\begin{document}
+\begin{center}
+    
+
+\textit{\textbf{\Huge{Fórmulas que te ayudarán a salvar el semestre}}}
+
+\section{Coordenadas}
+
+\begin{itemize}
+  
+    \item [\clubsuit] Cartesiana a polares: Si tienes un punto en coordenadas cartesianas (x,y) y lo quieres en coordenadas polares (r,θ), necesitas resolver un triángulo del que conoces dos lados, buscando señalar un punto diciendo la distancia y el ángulo que se forma.
+    $$ r=\sqrt{x^2 + y^2} $$
+    
+    \item[\clubsuit] Esféricas a cartesianas: Las coordenadas esféricas nos dan la localización de puntos en el espacio por medio de dos ángulos y de una distancia, la siguiente fórmula nos ayuda a obtener el valor de la coordenada y. 
+    $$ y= P\, sen \theta \, sen \, \phi $$
+    \item[\clubsuit] Cartesianas a cilíndricas: El ángulo θ es encontrado usando el mismo proceso de coordenadas cilíndricas. Usamos a la tangente inversa, en donde, y es el lado opuesto del ángulo y x es el lado adyacente. 
+    $$\theta=Tan^-1\, (\frac{x}{y}) $$
+    \item[\clubsuit] Cartesianas a esféricas: Para encontrar el ángulo phi, podemos usar la función coseno. Vemos que el lado adyacente a este ángulo es el lado z y la hipotenusa es igual a ρ.
+   \textcolor{orange}{ $$ \phi=ang\,cos\frac{z}{\sqrt{x^2+y^2+z^2}} $$}
+    \item[\clubsuit] Cilíndircas a cartesianas: Las coordenadas cilíndricas son consideradas como una extensión de las coordenadas polares hacia la tercera dimensión. La forma general de las coordenadas cilíndricas es $$ (r, \theta, z) $$ en donde para obtener el valor de y con estos datos usamos la siguiente fórmula. 
+
+
+   $$ y=\, r\,  Cos \, \theta$$
+
+\end{itemize}
+
+
+\section{Integrales}
+
+\begin{itemize} 
+
+    \item[\heartsuit] Integración por partes:
+     Para obtener la integral indefinida de una función mediante integración por partes se utiliza la siguiente fórmula donde, la integral indefinida del término de la derecha es igual a la diferencia de las integrales indefinidas de los términos de la izquierda.
+  \textcolor{blue}{  $$
+          \int u \cdot dv= uv - \int v \cdot du $$}
+   
+       
+    
+  \item[\heartsuit] Producto de integrales: La integral del producto de una constante por una función, es igual al producto de la constante por la integral de la función.
+
+     $$ \int k \cdot f(x)dx=k \cdot \int f(x)dx $$
+  
+      
+   \item[\heartsuit] Regla de barrow: La regla de Barrow dice que la integral definida de una función continua f(x) en un intervalo cerrado [a, b] es igual a la diferencia entre los valores que toma una función primitiva G(x) de f(x), en los extremos de dicho intervalo.
+  
+      $$ \int_{a}^{b} f(x)\,dx= F(b) - F(a) $$
+   
+   
+    \item[\heartsuit]  Suma y resta de integrales: La integral de una suma (respectivamente diferencia) de funciones, es igual a la suma (respectivamente diferencia) de las integrales de las funciones.
+   
+   $$ \int_{a}^{b} (f(x)\mp g(x))\,dx=\int_{a}^{b} f(x)\,dx + \int_{a}^{b} g(x)\,dx $$
+    
+    
+     \item[\heartsuit] Propiedades de la
+integral definida:  Si c es un punto interior del intervalo [a,b], la integral definida se descompone como una suma de dos integrales extendidas a los intervalos [a,c] y [c,b].
+$$    \int_{a}^{b} f(x)\, dx= \int_{a}^{c} f(x)\, dx + \int_{c}^{b} f(x)\, dx $$
+
+     
+\end{itemize}
+ 
+
+
+\section{Movimiento Rectilíneo Uniforme y Acelerado}
+
+\begin{itemize}
+   \item[\bigstar] Velocidad: Esta en MRU es constante y viene definida como el cociente entre el incremento de espacio y el incremento de tiempo.
+   $$ v=\frac{\varDelta x}{\varDelta t} $$
+ 
+   
+ \item[\bigstar] Aceleración instantánea: Es la que tiene el cuerpo en un instante específico, en un punto determinado de su trayectoria. El resultado es la derivada de la función de velocidad v(t).
+ $$ a(t)=\frac{d}{dt}v(t) $$
+ 
+  \item[\bigstar] Aceleración media: Representa el cambio que experimenta la velocidad instantánea durante
+un intervalo de tiempo. Algebraicamente es el cociente entre la variación de la velocidad instantánea y el intervalo de tiempo.
+  \textcolor{purple}{$$ \Vec{a}_m=\frac{\Vec{v}_f - \Vec{v}_i}{\Delta t} $$}
+   \item[\bigstar] Posición del cuerpo: Después de un cierto tiempo su posición se calcula a partir de la posición inicial y de la velocidad del cuerpo.
+   $$ x=x_0+v\cdot t $$
+    \item[\bigstar] Velocidad instantánea: Es el limite de la velocidad media a medida que el tiempo transcurrido se acerca a cero, o la derivada de x con respecto a t.
+    $$ V= \lim\limits_{\Delta t \to 0}\frac{x(t\, +\,\Delta t) - x (t)}{\Delta t} $$ 
+\end{itemize}
+
+
+
+\section{Trigonometría}
+
+\begin{itemize}
+   \item[\diamondsuit] Razones trgonometricas: El seno de un ángulo alpha se define como la razón entre el cateto opuesto y la hipotenusa. 
+  $$ sin\alpha =\frac{CO}{H} $$
+  \item[\diamondsuit] Teorema del coseno: El teorema relaciona un lado de un triángulo cualquiera con los otros dos y con el coseno del ángulo formado por estos dos lados. Donde el cuadrado de cada lado es igual a la suma de los cuadrados de los otros dos menos el doble producto del producto de ambos por el coseno del ángulo que forman.
+  $$ a^2=b^2+c^2-2bc\,cos\theta  $$
+   \item[\diamondsuit] Relaciones
+trígonométricas fundamentales: Estas relaciones permiten conocer el seno, coseno y tangente de un ángulo a partir del conocimiento de uno de ellos siempre que se sepa en que cuadrante se ecuentra el ángulo. Estas no son independientes y están relacionadas entre sí. 
+$$ tan\,\alpha=\frac{sin \,\alpha}{cos\,\alpha}  $$
+    \item[\diamondsuit]Ley de Senos: En cualquier triángulo la medida de la longitud de los lados es directamente proporcional a la medida de los senos de los ángulos opuestos a esos lados. 
+    \textcolor{pink}{$$ \frac{a}{sen\,\alpha}=\frac{b}{sen\,\beta} =\frac{c}{sen\, \gamma} $$}
+     \item[\diamondsuit] Identidades Recíprocas: Las identidades recíprocas son identidades trigonométricas que son definidas con respecto a las funciones trigonométricas fundamentales. Entonces el valor del seno de un ángulo siempre es igual al recíproco del valor de la cosecante y viceversa. 
+     $$ csc(\theta)=\frac{1}{sin(\theta)}   $$
+     
+\end{itemize}
+ 
+
+\section{Tiro parabólico}
+
+\begin{itemize}
+   \item[\Im] Altura máxima: Este valor se alcanza cuando la velocidad en el eje y, vy , vale 0. A partir de la ecuación de velocidad en el eje vertical, e imponiendo vy = 0, obtenemos el tiempo t que tarda el cuerpo en llegar a dicha altura. A partir de ese tiempo, y de las ecuaciones de posición, se puede calcular la distancia al origen en el eje x y en el eje y.
+
+   $$ h= \frac{V_o^2 Sen^2 \theta}{2g} $$
+   
+  \item[\Im] Tiempo total: Se calcula igualando a 0 la componente vertical de la posición. Es decir, el tiempo de vuelo es aquel para el cual la altura es 0 (se llega al suelo).
+  $$ Tt= \frac{2V_o Sen \theta}{g} $$
+  
+\item[\Im]Ángulo de trayectoria: Este ángulo coincide con un determinado punto con el ángulo que el vector velocidad forma con la horizontal en ese punto. Para su cálculo obtenemos las componentes. $$ \Vec{v_x} y \Vec{v_y} $$
+
+   $$ tan\,\alpha=\frac{v_y}{v_x} \Longrightarrow \alpha=arctan\, (\frac{v_y}{v_x}) $$
+   
+    \item[\Im] Compononte x: Para obtener las ecuaciones del movimiento, separamos el movimiento del proyectil en sus dos componentes,x (horizontal) y (vertical). El componente x describe un MRU.
+   \textcolor{brown}{$$  x(t)=x_0+v_x t =0+V_0\,cos\, \alpha_0\cdot t=V_0\,cos\, \alpha_0\cdot t $$}
+    
+     \item[\Im] Alcance: Se trata de la distancia máxima en horizontal desde el punto de inicio del movimiento al punto en el que el cuerpo impacta el suelo. Una vez obtenido el tiempo de vuelo, simplemente sustituye en la ecuación de la componente horizontal de la posición.
+     $$ R=\frac{V_o^2sen2\theta}{g} $$
+\end{itemize}
+ 
+
+
+
+
+\end{center}
+
+\end{document}
