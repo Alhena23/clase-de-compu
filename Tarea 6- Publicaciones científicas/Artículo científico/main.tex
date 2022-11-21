@@ -1,0 +1,115 @@
+\documentclass[7pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[left=2cm, right=2cm,top=1.5cm,foot=0.02cm]{geometry}
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{mathrsfs}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{array}
+\usepackage{dsfont}
+\usepackage{fancyhdr}
+\pagestyle{empty} 
+\usepackage{lipsum}
+\usepackage[maxbibnames=99, sorting=none,backend=bibtex]{biblatex}
+\addbibresource{ref1.bib}
+
+
+\title{Articulo Cientifico}
+\author{Fran, Alexa, Eduardo}
+\date{November 2022}
+
+\begin{document}
+
+%---------------------Parte de Arriba-------------------
+
+\textcolor{BrickRed}{\Large{\Huge{RESEARCH HIGHLIGHTS}}}
+\vspace{1.75cm}
+
+\textup{\colorbox{GreenYellow}{\large{PHYSICS}}}
+\vspace{0.25cm}
+
+\textbf{{\Large{Echoes of fluid spin}}}
+\vspace{0.5cm}
+
+{\Large{Huifeng Du, Chu Ma and Nicholas X. Fang*}}
+
+
+\begin{multicols}{3}
+
+Spin—an intrinsic angular momentum carried by elementary particles—has long been thought to be exclusive to quantum mechanical systems. The spin of photons, for example, is associated with the vectorial nature of electromag- netic waves \cite{1}. In classical systems, however, the concept of a spinning degree of freedom is not as well defined. For instance, sound is often considered to be spinless due to the longitudinal and scalar-pressure field description of acoustic waves.\\
+It comes down to the question of whether the scalar theoretical framework is a complete description of acoustics in some scenarios. Fundamentally speak ing, vector field theory is required for the accurate depiction of hydrodynam- ics, and some information about the degree of freedom of microscopic fluid motion might be lost when using the scalar-pressure acoustic equations. In- deed, most of the time, the vector po- tential in Stokes flows is regarded as an arbitrary quantity that does not partici- pate in the sound emission and momen- tum transfer. Recently, researchers from the University of California, Berkeley and Tongji University observed the spinning motion of fluids in sound propagation for the first time \cite{2}, with brand new physical insights of such vector poten- tials. They also observed acoustic-spin- induced torque due to the absorption of spin angular momentum on an acous- tic probe, as well as spin-momentum locking.
+
+Scientists have long been seeking to establish a connection between
+quantum mechanical wave functions and fluid dynamics. For example, a set of well-established Madelung equations that illustrate the link between spin and orbital angular momentums \cite{3} can be obtained via the decomposition of local velocity into two parts, as shown in Fig: \ref{fig:my_label} homogeneous component representing the velocity of the center of mass, plus the inhomogeneous and microscopic contri- bution, which is the velocity of motion in the center-of-mass frame (some named it the internal ‘spin motion’ or {\it{Zitterbe- wegung}}, ‘trembling motion’ in German). \\
+Furthermore, it has been demonstrated that the concept of Bohm quantum po- tential in the Madelung fluid model is an equivalent way of showing the existence of spin and {\it{Zitterbewegung}} of particles, thus providing a physical interpretation of the non-classical potential. For a given fluid flow at position $x$,
+
+\begin{equation}
+    \label{Equation 1}
+    \mathbf{x = \xi + x; \hspace{.5cm} \dot{x} \equiv v = u + V} 
+    
+    \hspace{1cm}= p_{m} + \frac{\nabla \times (\rho s)}{\rho}
+\end{equation}
+\newline
+\newline
+where $\mathbf{\xi}$ and $\mathbf{u = \dot{\xi}}$ are the motion and velocity of the center of mass, and $\mathbf{X}$ and $\mathbf{V \equiv \dot{X}}$ represent the internal motion relative to the center-of-mass frame. 
+The last equality was proposed by Hestenes in the absence of external electromagnetic vector potencial \cite{4} Note the momentum in (1) is actually momentum density with respect to unit mass, and the same holds for the spin term. Since the curl of the gradient vanishes, the local rotational properties of the Madelung fluid can be
+\vspace{4cm}
+\end{multicols}
+
+\begin{figure}[h]
+    \centering
+        \includegraphics[scale= 0.63]{Figura 1.jpeg}
+\caption{\tiny{Illustration of fluid element motion decomposition and exerted torque on a spinnable particle. At the intersection of two orthogonal acoustic beams with retarded phases, the spinning fluid applies a torque on the object via angular momentum transfer}}
+    \label{fig:my_label}
+\end{figure}
+
+%-------------------Segunda pagina--------------------------
+
+\newpage
+
+
+%---------------------tabla-------------------
+\begin{table}[]
+    \centering
+        \caption{Decomposition of fluid motion into center-of-mass motion in the classical sense and non-classical spin motion.}
+\begin{tabular}{ b{4cm} b{3.5cm} p{3.5cm} {3.5cm}}\hline
+    &  &  &  \\ 
+     & Kinematics & Hydrodynamics & Quantum mechanics \\ \hline
+    &  &  &  \\ 
+     Center-of-mass motion & $\mathbf{u}$ & $rot p_{m} = rot \nabla \varphi = 0$ & $E = \frac{1}{2} m \mathbf{u}^2 $(kinetic energy) \\ 
+    &  &  &  \\
+    Spin or \textit{Zitterbewegung} & $\mathbf{V}$ & $rot \frac{\nabla \times (\rho s)}{\rho}  \varpropto J$ & $\frac{\hbar^2}{4m}[\frac{1}{2}(\frac{\nabla \rho }{\rho})^2 -\frac{\Delta \rho}{\rho}]$(Bohm Potential)
+    &  &  &      \\ \hline
+\end{tabular}     
+    \label{Tabla 1}
+\end{table}
+{\small{Wave function $\Psi\equiv\sqrt{\rho}e^{i\frac{\varphi}{\hbar}}\chi$. Linear momentum and spin vector can be expressed accordingly with Paulli matrices $\mathbf{\sigma:p}\equiv \rho^{-1}\frac{i\hbar}{2}\left[(\nabla\psi^\dagger)\psi-\psi^\dagger\nabla\psi\right],\hat{s}\equiv\rho^{-1}\psi^\dagger\mathbf{\hat{ s}}\psi,\mathbf{\hat{s}}\equiv\frac{\hbar}{2}(\sigma_x;\sigma_y;\sigma_z)$.}}
+
+
+
+%------------------------------------------
+\begin{multicols}{3}
+shown to be \cite{4}.
+   $$ rot\mathbf{v} = curl  \mathbf{p}_m + curl\mathbf{V} = curl\mathbf{\nabla}\varphi $$
+\begin{equation}
+    + curl\mathbf{ V} = \left[\left(\frac{\nabla \rho }{\rho}\right)^2 -\frac{\Delta \rho}{\rho}\right]\hspace{.10cm} \mathbf{s} \varpropto J
+\end{equation}
+One would immediately recognize that the second-to-last term is analogous to the Bohm potential in quantum mechanics, which reflects the non-classical spinning nature of the fluid motion, while the classical center-of-mass momentum $\mathbf{p_{m} = \nabla \varphi}$
+vanishes with the curl operator (shown in Table \ref{Tabla 1}). The last equation suggests that the angular-momentum transfer in fluids could, in principle, serve as an indicator of the spin vector. This provides a feasible route to deduce the acoustic spin by experimentally measuring the torque $J$ exerted on a spinning object (2). 
+The spin angular-momentum density s reflects the fluid's intrinsic property and is origin-independent; this is in contrast to the orbital angular momentum, which generally requires a reference point to define: $\mathbf{L}= \rho (\mathbf{r} \times \mathbf{p}_{m})$, 
+ where r is the position vector and the total angular momentum admits the following decomposition:
+\begin{equation}
+    \mathbf{J = L + S } =(\mathbf{r} \times \mathbf{p}_{m}) +\rho \mathbf{s}
+\end{equation}
+This implies that acoustic vortex beams are eigenmodes of the total angular-momentum operator instead of $\hat{L}$ or $\hat{S}$ separately.\\
+In summary, She {\it{et al}}. offered new physical insights into the spinning-vector potential by evaluating the rotation angle on a coiled space meta-atom serving as an acoustic probe\cite{2}. In addition, spin-momentum locking is revealed by showing the coupling of the spin-up or spin-down acoustic wave with a metamaterial waveguide composed of periodical grooves. The work provides the first demonstration of the existence of acoustic spin and opens the door for future explorations of the acoustic analogy of spin physics in quantum physics and electromagnetics, such as the topological transport of sound facilitated by the spin-redirection geometric phase \cite{5}. It also offers a new degree of freedom to manipulate acoustic waves for applications of acoustic sensing or particle manipulation in complex fluid and soft condensed matters.\\
+\textcolor{gray}{\textls{Conflict of interest statement}}. None declared.\\
+\printbibliography
+\end{multicols}
+
+
+\end{document}
